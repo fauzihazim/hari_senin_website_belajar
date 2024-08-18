@@ -2,36 +2,131 @@
     --primary-color: #3ECF4C;
 } */
 
-article {
-    background-color: #FFFFFF;
-    width: 590px;
-    height: 617px;
-    padding: 36px 0px 0px 0px;
-    gap: 36px;
-    text-align: center;
-    border: 1px solid #F1F1F1;
-    opacity: 0px;
-    margin-right:auto;
-    margin-left:auto;
+/* @media only screen and (max-width: 645px) {
+    body {
+      background-color: lightblue;
+    }
+} */
+
+/* body {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+@media only screen and (min-width: 645px) {
+    h1 {
+        font-family: Poppins; font-size: 32px; font-weight: 600; line-height: 35.2px; text-align: center;
+    }
+    
+    #yukLanjutinVideoBelajarmu {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+    }
+    
+    .required {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.15000000596046448px;
+        text-align: left;
+        color: #D32E1F;
+    }
+    
+    .password-toggle-icon {
+        margin-left: -30px;
+        cursor: pointer;
+    }
+    
+    .fa-eye {
+        font-size: 18px;
+        line-height: 1;
+        color: #333;
+        transition: color 0.3s ease-in-out;
+        margin-bottom: 20px;
+    }
+    
+    .forgotPassword {
+        margin-right: 36px;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+    }
+    
+    .btnMasuk {
+        width: 518px;
+        height: 42px;
+        border-radius: 10px;
+        background-color: #3ECF4C;
+        color: #FFFFFF;
+        border: 0px;
+        margin-bottom: 16px;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+    }
+    
+    .btnDaftar {
+        width: 518px;
+        height: 42px;
+        gap: 0px;
+        border-radius: 10px;
+        opacity: 0px;
+        background-color: #E2FCD9CC;
+        color: #3ECF4C;
+        border: 0px;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+    }
+    
+    article {
+        max-width: fit-content;
+        background-color: #FFFFFF;
+        width: 590px;
+        height: 617px;
+        /* width: 100%; */
+        padding: 36px;
+        gap: 36px;
+        text-align: center;
+        /* border: 1px solid #F1F1F1; */
+        /* border: 1px solid #cb1515; */
+        opacity: 0px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    section{
+        width: 50%;
+        height: 50%;
+        background-color: #FFFDF3;
+        margin: auto;
+    }
+    
+    .forgotPassword {
+        text-align: right;
+    }
+    
+    article a {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: right;
+        text-decoration: none;
+        color: #4A505C;
+    }
 }
 
-section{
-    width: 100%;
-    height: 100%;
-    background-color: #FFFDF3;
-}
-
-.forgotPassword {
-    text-align: right;
-}
-
-article a {
-    font-family: DM Sans;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22.4px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: right;
-    text-decoration: none;
-    color: #c82424;
-}

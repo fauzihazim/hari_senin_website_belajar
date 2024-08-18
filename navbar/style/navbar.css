@@ -28,3 +28,13 @@ nav a {
     text-decoration: none;
     color: #000;
 }
+
+nav button {
+    background-color: #cf3e62;
+    border: 1px solid #3ECF4C;
+    list-style: none;
+    margin: 0 0.5rem;
+    width: 117px;
+    line-height: 42px;
+    text-align: center;
+}
