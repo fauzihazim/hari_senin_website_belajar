@@ -1,23 +1,41 @@
-/* :root {
-    --primary-color: #3ECF4C;
-} */
-
-/* @media only screen and (max-width: 645px) {
-    body {
-      background-color: lightblue;
+@media only screen and (min-width: 811px) {
+    nav {
+        height: 80px;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 120px;
+        gap: 36px;
+        border-bottom: 1px solid #3A35411F;
     }
-} */
-
-/* body {
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-@media only screen and (min-width: 645px) {
+    .nav-logo {
+        width: 474px;
+        height: 112px;
+        margin-top: 10px;
+        gap: 60px;
+        opacity: 0px;
+    }
+    .account {
+        display: flex;
+    }
+    nav li {
+        background-color: #3ECF4C;
+        border: 1px solid #3ECF4C;
+        list-style: none;
+        margin: 0 0.5rem;
+        width: 117px;
+        line-height: 42px;
+        text-align: center;
+    }
+    nav > ul {
+        text-decoration: none;
+        color: #000;
+    }
     h1 {
         font-family: Poppins; font-size: 32px; font-weight: 600; line-height: 35.2px; text-align: center;
     }
-    
     #yukLanjutinVideoBelajarmu {
         font-family: DM Sans;
         font-size: 16px;
@@ -26,7 +44,6 @@
         letter-spacing: 0.20000000298023224px;
         text-align: center;
     }
-    
     .required {
         font-family: Poppins;
         font-size: 16px;
@@ -36,12 +53,6 @@
         text-align: left;
         color: #D32E1F;
     }
-    
-    .password-toggle-icon {
-        margin-left: -30px;
-        cursor: pointer;
-    }
-    
     .fa-eye {
         font-size: 18px;
         line-height: 1;
@@ -49,7 +60,45 @@
         transition: color 0.3s ease-in-out;
         margin-bottom: 20px;
     }
-    
+    .labelEmail {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        float: left;
+        margin-left: 36px;
+    }
+    .inputEmail {
+        width: 518px;
+        height: 48px;
+        border-radius: 6px;
+        border: 1px solid;
+        border-color: #F1F1F1;
+        margin-bottom: 18px;
+    }
+    .labelPassword {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        float: left;
+        margin-left: 36px;
+    }
+    .inputKataSandi {
+        width: 518px;
+        height: 48px;
+        border-radius: 6px;
+        border: 1px solid;
+        border-color: #F1F1F1;
+    }
+    .user-box {
+        position: relative;
+        margin-bottom: 30px;
+    }
     .forgotPassword {
         margin-right: 36px;
         font-family: DM Sans;
@@ -58,7 +107,24 @@
         line-height: 22.4px;
         letter-spacing: 0.20000000298023224px;
     }
-    
+    .login {
+        width: 117px;
+        height: 42px;
+        gap: 0px;
+        border-radius: 10px;
+        border: 1px;
+        opacity: 0px;
+        margin: 5px;
+    }
+    .register {
+        width: 117px;
+        height: 42px;
+        gap: 0px;
+        border-radius: 10px;
+        border: 1px;
+        margin-left: 5px;
+        margin-right: 40px;
+    }
     .btnMasuk {
         width: 518px;
         height: 42px;
@@ -73,7 +139,6 @@
         line-height: 22.4px;
         letter-spacing: 0.20000000298023224px;
     }
-    
     .btnDaftar {
         width: 518px;
         height: 42px;
@@ -89,35 +154,59 @@
         line-height: 22.4px;
         letter-spacing: 0.20000000298023224px;
     }
-    
+    #btnLoginWithGoogle {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        width: 518px;
+        height: 42px;
+        gap: 0px;
+        border-radius: 10px;
+        border: 1px;
+        padding: 8px 26px 8px 26px;
+        gap: 8px;
+        opacity: 0px;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+    }
+    button > i {
+        margin-left: auto;
+        vertical-align: auto;
+        margin-right: 0px;
+        margin-top: 4px;
+    }
+    button > span {
+        margin-right: auto;
+        vertical-align: auto;
+    }
     article {
-        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
         background-color: #FFFFFF;
         width: 590px;
         height: 617px;
-        /* width: 100%; */
-        padding: 36px;
+        text-align: center;
         gap: 36px;
-        text-align: center;
-        /* border: 1px solid #F1F1F1; */
-        /* border: 1px solid #cb1515; */
         opacity: 0px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
     }
-    
     section{
-        width: 50%;
-        height: 50%;
+        width: 590px;
+        height: 617px;
         background-color: #FFFDF3;
         margin: auto;
+        padding: 36px 0px 0px 0px;
+        gap: 36px;
+        border-radius: 4px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
     }
-    
     .forgotPassword {
         text-align: right;
     }
-    
     article a {
         font-family: DM Sans;
         font-size: 16px;
@@ -130,3 +219,239 @@
     }
 }
 
+.password-toggle-icon {
+    margin-left: -30px;
+    cursor: pointer;
+}
+#togglePassword {
+    color: #6C717A;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    border-bottom: 1px solid #E2E8F0;
+}
+.navbar {
+    height: 74px;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    border: 1px 0px 1px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+nav.navbar {
+    margin: 0px;
+    padding: 0px;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+.nav-link:hover{
+    color: #482ff7;
+}
+h1 {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 811px) {
+    .nav-logo {
+        width: 152px;
+        height: 42px;
+        gap: 60px;
+        opacity: 0px;
+    }
+    .nav-item {
+        margin-left: 5rem;
+    }
+    ul.nav-menu.active{
+        padding: 0px;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -1000%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        margin: 0px;
+        left: 0;
+    }
+    article {
+        width:88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26.4px;
+        text-align: center;
+    }
+    .required {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.15000000596046448px;
+        text-align: left;
+        color: #D32E1F;
+    }
+    .inputEmail, .inputKataSandi {
+        width: 100%;
+        height: 36px;
+        border-radius: 6px;
+        border: 1px solid;
+        border-color: #F1F1F1;
+    }
+    .fa-eye {
+        font-size: 18px;
+        line-height: 1;
+        color: #333;
+        transition: color 0.3s ease-in-out;
+        margin-bottom: 20px;
+    }
+    .forgotPassword {
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333333AD;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: right;
+    }
+    .btnMasuk {
+        width: 100%;
+        gap: 0px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 16px;
+        opacity: 0px;
+        background-color: #3ECF4C;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .btnDaftar {
+        width: 100%;
+        gap: 0px;
+        border-radius: 10px;
+        border: none;
+        opacity: 0px;
+        background-color: #E2FCD9CC;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        color: #3ECF4C;
+    }
+    #btnLoginWithGoogle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0px;
+        border-radius: 10px;
+        border: 1px;
+        opacity: 0px;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+    }
+    button > span {
+        margin-right: auto;
+        margin-left: 8px;
+        vertical-align: auto;
+    }
+    button > i {
+        margin-left: auto;
+        vertical-align: auto;
+        margin-right: 0px;
+        margin-top: 4px;
+    }
+    #yukLanjutinVideoBelajarmu {
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+    }
+    .labelEmail, .labelPassword {
+        font-family: DM Sans;
+        color: #333333AD;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+    }
+    .active {
+        margin-left: 0px;
+    }
+    .nav-item {
+        margin: 10px;
+    }
+    .hamburger {
+        gap: 0px;
+        opacity: 0px;
+        display: block;
+        cursor: pointer;
+    }
+    .bar {
+        width: 24px;
+        margin-right: 25px;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
