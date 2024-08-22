@@ -3,72 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins"/>
-    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/login.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="navbar/navbar.js"></script>
-    <title>Login | Website Video Belajar</title>
+    <title>Document</title>
+    <style>
+        h5{
+            position:relative;
+            margin-bottom: 0px;
+            /* margin-left: 100px; */
+        }
+        /* h5:after
+        {
+            content:' ';
+            display:block;
+            width:200px;
+            position:absolute;
+            padding-bottom:21px;
+        } */
+        hr{
+            margin-top: 0px;
+            background-color: #000000;
+            border: 1px solid black;
+            /* border-bottom: 1px solid #000; */
+            border-radius: 7px;
+            height: 1px;
+            width: 5%;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <img class="nav-logo" src="src/logo.png" alt="logo video belajar">
-            </div>
-            <ul class="nav-menu">
-                <li class="login nav-item"><a class="nav-link" href="index.html">Login</a></li>
-                <li class="register nav-item"><a class="nav-link" href="register.html">Register</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><span class="border-bottom border-primary">Daftar Kategori</span></h5>
+                <hr>
+              
+                <h5 class="card-title"><span class="border-bottom border-primary">Daftar Kategori</span></h5>
+                <hr>
+              
 
-    <section>
-        <article>
-            <!-- <h1>Masuk ke Akun</h1>
-            <h5 id="yukLanjutinVideoBelajarmu">Yuk, lanjutin belajarmu di videobelajar.</h5>
-            <label for="email" style="font-family: DM Sans; font-size: 16px; font-weight: 400; line-height: 22.4px; letter-spacing: 0.20000000298023224px; text-align: left; float: left; margin-left: 36px;">
-                E-mail <span class="required">*</span>
-            </label><br>
-            <input type="email" name="" id="email" style="width: 518px; height: 48px; border-radius: 6px; border: 1px solid; border-color: #F1F1F1; margin-bottom: 18px;"><br>
-            <div class="user-box" style="position: relative; margin-bottom: 30px;">
-                <label for="password" style="font-family: DM Sans; font-size: 16px; font-weight: 400; line-height: 22.4px; letter-spacing: 0.20000000298023224px; text-align: left; float: left; margin-left: 36px;">
-                    Kata Sandi <span class="required">*</span>
-                </label><br>
-                <input type="password" name="" id="kataSandi" style="width: 518px; height: 48px; border-radius: 6px; border: 1px solid; border-color: #F1F1F1;">
-                <span class="password-toggle-icon"><i id="togglePassword" class="fas fa-eye"></i></span>
+                <h5 class="card-title"><span class="border-bottom border-primary">Daftar Kategori</span></h5>
+                <hr>
+              
+                <h5 class="card-title"><span class="border-bottom border-primary">Daftar Kategori</span></h5>
+                <hr>
             </div>
-            <h5 class="forgotPassword" id="forgotPassword">
-                <a href="#">Lupa Password?</a>
-            </h5>
-
-            <button class="btnMasuk">Masuk</button><br>
-            <button class="btnDaftar">Daftar</button><br>
-            <h5 style="width: 88%; gap: 10px; border-bottom: 1px solid #F1F1F1;  line-height: 0.1em; margin-left: auto; margin-right: auto;">
-                <span style="background:#fff; padding:0 10px; color: #4A505C; font-family: DM Sans; font-weight: 400; align-items: center;">
-                    atau
-                </span>
-            </h5> -->
-            <button style="margin-left: auto; margin-right: auto; display: flex; align-items: center; width: 280px; height: 34px; gap: 0px; border-radius: 10px; border: 1px; padding: 8px 26px 8px 26px; gap: 8px; opacity: 0px; font-family: DM Sans; font-size: 16px; font-weight: 600; line-height: 22.4px; letter-spacing: 0.20000000298023224px;">
-                <i style="margin-left: auto; vertical-align: auto; margin-right: 0px; margin-top: 4px;">
-                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"> style="width: 15px; height: 20px; gap: 0px; opacity: 0px;">
-                        <path d="M20.4905 10.926C20.4905 10.0874 20.4224 9.47543 20.2752 8.84082H10.6992V12.6258H16.3201C16.2068 13.5664 15.5948 14.983 14.2349 15.9349L14.2159 16.0616L17.2436 18.4071L17.4534 18.4281C19.3798 16.6489 20.4905 14.0311 20.4905 10.926Z" fill="#4285F4"/>
-                        <path d="M10.6992 20.8983C13.453 20.8983 15.7648 19.9917 17.4534 18.4279L14.2349 15.9347C13.3737 16.5353 12.2177 16.9546 10.6992 16.9546C8.00211 16.9546 5.71297 15.1754 4.89695 12.7163L4.77734 12.7265L1.62906 15.1629L1.58789 15.2774C3.26508 18.6091 6.71016 20.8983 10.6992 20.8983Z" fill="#34A853"/>
-                        <path d="M4.89695 12.7164C4.68164 12.0818 4.55703 11.4018 4.55703 10.6993C4.55703 9.9966 4.68164 9.31668 4.88562 8.68207L4.87992 8.54691L1.69219 6.07129L1.58789 6.1209C0.896641 7.50348 0.5 9.05605 0.5 10.6993C0.5 12.3425 0.896641 13.895 1.58789 15.2775L4.89695 12.7164Z" fill="#FBBC05"/>
-                        <path d="M10.6992 4.44367C12.6144 4.44367 13.9063 5.27094 14.6429 5.96227L17.5213 3.1518C15.7535 1.50859 13.453 0.5 10.6992 0.5C6.71016 0.5 3.26508 2.78914 1.58789 6.12086L4.88563 8.68203C5.71297 6.22289 8.00211 4.44367 10.6992 4.44367Z" fill="#EB4335"/>
-                    </svg>
-                </i>
-                <span style="margin-right: auto; vertical-align: auto;">
-                    Masuk dengan Google
-                </span>
-            </button>
-        </article>
-    </section>
-    <script src="script/index.js"></script>
+        </div>
+    </div>
 </body>
 </html>
